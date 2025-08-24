@@ -73,6 +73,8 @@ if is_incomplete_workflow(response1):
 
 ## Multi-Turn Implementation Deep Dive
 
+![Multi-Turn Implementation](docs/Gemini_multi_turn_calls.svg)
+
 ### 1. Workflow Detection
 
 ```python
