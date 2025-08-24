@@ -1,0 +1,33 @@
+# This file contains the list of Python pip packages required for the Dash application.
+# Core Dash & Components
+dash==3.1.1  # supports dmc >1.0.0 and defaults to React 18.3.1
+dash-mantine-components>=2.0.0 # includes Mantine v8.0.2 requires React 18.3.1 or 18.2.0
+dash-bootstrap-components>=2.0.3  # Bootstrap components requires dash>=3.0.4
+dash-core-components
+dash-html-components
+dash-iconify
+Flask<3.2  # Flask is a dependency of Dash, but we need to ensure it's below 3.2 for compatibility
+
+
+# Additional Dash Components
+dash-chat>=0.3.0   # responsive chat UI
+dash-ag-grid==31.3.1  # For AG Grid components
+dash-extensions==2.0.4  # For advanced Dash features, websockets, Lotie, Mermaid, etc
+
+
+# Authentication & Session Management
+python-dotenv  # For loading environment variables
+
+# Data Processing & Utilities
+pandas  # For data manipulation
+numpy  # For numerical operations
+plotly  # For charts and visualizations
+narwhals  # For advanced data table components
+python-dateutil  # For date handling
+
+# Other Services
+requests  # For HTTP requests
+
+# Gemini Integration
+google-genai
+pydantic  # For data validation and settings management

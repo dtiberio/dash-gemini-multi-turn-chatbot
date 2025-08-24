@@ -1,0 +1,58 @@
+
+# .env - Environment Configuration for Gemini Chatbot
+# This file contains environment variables for configuring the Dash chatbot application
+
+# Gemini API Configuration
+# Get your own API Key from the Google AI Studio, for free
+GOOGLE_API_KEY=your-gemini-api-key
+
+# Logging Configuration
+# =====================
+
+# Log Level: DEBUG, INFO, WARNING, ERROR, CRITICAL
+LOG_LEVEL=DEBUG
+
+# Console Logging: true/false
+LOG_TO_CONSOLE=true
+
+# File Logging: true/false  
+LOG_TO_FILE=true
+
+# Log Format for Console: colored, json, simple
+# - colored: Human-readable with colors (best for development)
+# - json: Structured JSON format (best for production/parsing)
+# - simple: Basic text format
+LOG_FORMAT=colored
+
+# Log Directory (only used if LOG_TO_FILE=true)
+LOG_DIR=logs
+
+# Maximum number of log files to keep (daily rotation)
+MAX_LOG_FILES=7
+
+# Maximum log file size in MB before rotation
+MAX_LOG_SIZE_MB=10
+
+# Development vs Production Examples:
+# ===================================
+
+# Development Configuration:
+# LOG_LEVEL=DEBUG
+# LOG_TO_CONSOLE=true
+# LOG_TO_FILE=false
+# LOG_FORMAT=colored
+
+# Production Configuration:
+# LOG_LEVEL=INFO
+# LOG_TO_CONSOLE=false
+# LOG_TO_FILE=true
+# LOG_FORMAT=json
+# LOG_DIR=/var/log/gemini_chatbot
+# MAX_LOG_FILES=14
+# MAX_LOG_SIZE_MB=50
+
+# Debugging Configuration (when troubleshooting function calls):
+# LOG_LEVEL=DEBUG
+# LOG_TO_CONSOLE=true
+# LOG_TO_FILE=true
+# LOG_FORMAT=colored
